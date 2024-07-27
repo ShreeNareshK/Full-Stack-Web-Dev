@@ -1,0 +1,43 @@
+/* *{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.navbar{
+    background-color: #d49494;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+    align-items: center;
+}
+.navbar a{
+    height: fit-content;
+    padding: 10px;
+    width: fit-content;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.navbar button{
+    height: fit-content;
+    width: auto;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.Home-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: space-around;
+}
+.Home-about img{
+    height: 200px;
+    width: 200px;
+}
