@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+       .user-details label {
+        font-weight: lighter; 
+        font-size: large;
+        padding-right: 5px;
+       }
+       .user-details input {
+        height: 20px;
+        border: 2px solid #281212;
+        border-radius: 8px;
+       }
+    </style>
+  </head>
+
+  <body style="display: flex;justify-content: center;align-items: center;margin: 0;padding: 0;">
+    <div
+      class="user-details"
+      style="
+        width: fit-content;
+        height: 800px; 
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        border: 1px red;
+        border-radius: 5px;
+      "
+    >
+      <div><label>Enter Your Name </label><input type="text" /></div>
+      <div><label>Enter Your Email</label><input type="email" required /></div>
+      <div>
+        <label>Enter Your Password</label
+        ><input type="password" required maxlength="20" />
+      </div>
+      <div>
+        <label>Confirm Your Password</label
+        ><input type="password" required maxlength="20" />
+      </div>
+      <div><label>Enter Your DOB</label><input type="date" required /></div>
+      <div>
+        <select name="gender" id="gen">
+          <option value="Select" selected>Select Your Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Not To Say">Not To Say</option>
+        </select>
+      </div>
+      <div>
+        <label>Select You Plan</label>
+        <input type="radio" name="plan" />
+        <label for="Free">Free</label>
+        <input type="radio" name="plan" />
+        <label for="Basic">Basic</label>
+        <input type="radio" name="plan" />
+        <label for="Premium">Premium</label>
+      </div>
+      <div>
+        <label>Select Your Hobbies</label>
+        <input type="checkbox" />
+        <label for="Reading">Reading</label>
+        <input type="checkbox" />
+        <label for="Travelling">Traveling</label>
+        <input type="checkbox" />
+        <label for="Playing Cricket">Playing Cricket</label>
+      </div>
+      <div><label>Upload Your Image</label><input type="file" required accept=".jpg, .jpeg, .png"/></div>
+      <div style="display: flex;align-items: center;justify-content: center;margin-top: 20px;"><input type="submit" /></div>
+    </div>
+  </body>
+</html>
